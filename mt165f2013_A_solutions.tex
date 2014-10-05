@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[top=2cm, left=2cm,right=3cm,bottom=2cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{url,enumerate, ifthen}
+\newboolean{answers}
+%\setboolean{answers}{true}  % set to true to include TODO statements
+\setboolean{answers}{false}  % set to false to use input statements
+%% USAGE:
+%% \ifthenelse{\boolean{answers}}{\smallskip {\bf Answer:} (c). \newpage}{\newpage}
+
+%\usepackage{tikz}
+
+\newcommand\probskip{\vskip4cm}
+
+\begin{document}
+\pagestyle{empty}
+
+
+\noindent Math 165 Midterm Exam \hskip1cm Section:\underline{\phantom{XXXXXX}} \hfill Name:\underline{\phantom{XXXXXXXXXX}}
+
+\bigskip
+
+{\bf Part A: Pencil \& Paper Only}
+
+\bigskip
+
+\noindent This part of the exam has 10 problems on 3 pages. Each problem is worth 5 points. You
+may NOT use a calculator on this section. You must show all work. This part of the exam
+will be collected after 45 minutes.
+
+\begin{enumerate}
+% 1
+\item 
+Find $dy/dx$ if
+\[
+y = \frac{3x^3}{5x^2 + 2}.
+\]
+You do not need to simplify your answer.
+
+\medskip
+
+\noindent {\bf Solution:}
+
+\[
+\frac{dy}{dx} = \frac{(9x^2)(5x^2 + 2) - (3x^3)(10x)}{(5x^2+2)^2}
+\]
+
+\medskip
+
+% 2
+\item
+Suppose 
+\[
+g(x) = \frac{2}{x^2}.
+\]
+Find $g''(2)$. Simplify your answer.
+
+\medskip
+\noindent {\bf Solution:}
+\[
+g'(x) = -\frac{4}{x^3}
+\]
+\[
+g''(x) = \frac{12}{x^4}
+\]
+\[
+g''(2) = \frac{3}{4}
+\]
+\bigskip
+
+\item If 
+\[
+y = t^3 \ln t
+\]
+find $dy/dt$. Simplify your answer.
+
+\medskip
+\noindent {\bf Solution:}
+\begin{align*}
+\frac{dy}{dx}(t^3\ln t) &= 3t^2\ln t + t^3\frac{1}{t}\\
+&= 3t^2\ln t + t^2 \\
+&= t^2(3\ln t + 1)
+\end{align*}
+
+\bigskip
+
+\newpage
+%=======================================================================
+
+\noindent Midterm Exam \hfill page 2
+
+\item Find
+\[
+\lim_{x\rightarrow 1^-} \frac{x^2 + 4x + 3}{x^2 - 1}
+\]
+
+\medskip
+\noindent {\bf Solution:}
+%% \begin{align*}
+%% \lim_{x\rightarrow 1^-} \frac{x^2 + 4x + 3}{x^2 - 1}&=\lim_{x\rightarrow 1^-} \frac{(x+1)(x+3)}{(x+1)(x-1)}\\
+%% &=\lim_{x\rightarrow 1^-} \frac{x+3}{x-1}\\ 
+%% &=-\infty
+%% \end{align*}
+\[
+\lim_{x\rightarrow 1^-} \frac{x^2 + 4x + 3}{x^2 - 1}=\lim_{x\rightarrow 1^-} \frac{(x+1)(x+3)}{(x+1)(x-1)}
+=\lim_{x\rightarrow 1^-} \frac{x+3}{x-1}\\ 
+=-\infty
+\]
+
+\bigskip
+
+\item Let
+\[
+y = \frac{3x^2 - 5x - 2}{x^2 - 4}.
+\]
+Give the equations of all the horizontal asymptotes.
+
+\medskip
+\noindent {\bf Solution:}
+%% \begin{align*}
+%% \lim_{x\rightarrow \infty} \frac{3x^2 - 5x - 2}{x^2 - 4} &=
+%% \lim_{x\rightarrow \infty} \frac{3 - 5/x - 2/x^2}{1 - 4/x^2}\\ &=
+%% \frac{3-0-0}{1-0}\\
+%%  &=3
+%% \end{align*}
+\[
+\lim_{x\rightarrow \infty} \frac{3x^2 - 5x - 2}{x^2 - 4} =
+\lim_{x\rightarrow \infty} \frac{3 - 5/x - 2/x^2}{1 - 4/x^2} =
+\frac{3-0-0}{1-0}
+=3
+\]
+Therefore $y = 3$ is the horizontal asymptote.
+
+\bigskip
+
+\item Let
+\[
+y = \frac{3x^2 - 5x - 2}{x^2 - 4}
+\]
+Give the equations of all the vertical asymptotes.
+
+\medskip
+\noindent {\bf Solution:}
+%% \begin{align*}
+%% y = \frac{3x^2 - 5x - 2}{x^2 - 4} &= \frac{(x-2)(3x+1)}{(x-2)(x+2)}\\
+%% &=\frac{3x+1}{x+2}
+%% \end{align*}
+\[
+y = \frac{3x^2 - 5x - 2}{x^2 - 4} = \frac{(x-2)(3x+1)}{(x-2)(x+2)}
+=\frac{3x+1}{x+2}
+\]
+The function is not defined when the denominator is 0, therefore, $x = -2$ is
+the vertical asymptote. 
+\bigskip
+
+\newpage
+
+\noindent Midterm Exam \hfill page 3
+
+\item Find the derivative of $4x^3 \tan^2(x)$. 
+You do not need to simplify your answer.
+
+\medskip
+\noindent {\bf Solution:}
+% enter your solution here
+\bigskip
+
+\item Find the slope of the line tangent to the graph of 
+$y = \sqrt{x^2 + 4x - 5}$ at $x = 3$. Simplify your answer.
+
+\medskip
+\noindent {\bf Solution:}
+% enter your solution here
+\bigskip
+
+\item Suppose $f(x) = \sin^4(3e^x + 1)$. Find $f'(x)$. 
+You do not need to simplify your answer.
+
+\medskip
+\noindent {\bf Solution:}
+% enter your solution here
+\bigskip
+
+\item Let $f(x) = x^3 + 2x^2 + 1$ for $x \geq 0$. 
+Using that $f(1) = 4$, find $(f^{-1})(4)$.
+
+\medskip
+\noindent {\bf Solution:}
+% enter your solution here
+\bigskip
+
+\end{enumerate}
+
+\end{document}
